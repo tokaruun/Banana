@@ -68,9 +68,7 @@ local function keybnn(key)
 		welcomeLabel.Text = "Script loaded successfully!"
 		wait(2)
 		screenGui:Destroy() -- Clean up GUI
-	else
-		welcomeLabel.Text = "Error loading script: " .. tostring(result)
-	end
+
 end
 
 -- Sự kiện khi người chơi nhập và nhấn Enter
@@ -81,4 +79,5 @@ textBox.FocusLost:Connect(function(enterPressed)
 		textBox.Text = "" -- Clear input
 	end
 end)
+
 
